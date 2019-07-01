@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section id="jumbotron-image">
-      <b-container grid-list-xl>
+    <section>
+      <b-container>
         <!-- Jumbotron image -->
         <b-card
           overlay
@@ -15,7 +15,7 @@
     </section>
 
       <!-- Schedule -->
-    <b-container grid-list-xl>
+    <b-container>
       <b-row>
         <b-col lg="6" xs="12">
           <h2 class="text-left">Umroh & Wisata Sejarah</h2>
@@ -31,14 +31,14 @@
         <b-col lg="6" xs="12">
           <b-row>
             <b-col lg="6" xs="12">
-              <h6>WAKTU KEBERANGKATAN</h6>
+              <h6 class="text-left">WAKTU KEBERANGKATAN</h6>
                 <ul id="li-image">
                   <li>Maret 2018</li>
                   <li>Juni 2018</li>
                 </ul>
             </b-col>
             <b-col lg="6" xs="12">
-              <h6>LAMA WAKTU UMROH</h6>
+              <h6 class="text-left">LAMA WAKTU UMROH</h6>
                 <ul id="li-image">
                   <li>9 Hari</li>
                   <li>5 Hari</li>
@@ -49,6 +49,27 @@
           <b-row>
             <b-col lg="12" xs="12">
               <h6 class="text-left">PAKET KAMAR</h6>
+              <b-row>
+              <b-col lg="5" xs="12">
+                <div id="li-image"></div>
+                <p class="text-left font-weight-bold">Quad</p>
+                <p class="text-left font-weight-bold">Triple</p>
+                <p class="text-left font-weight-bold">Double</p>
+              </b-col>
+              <b-col lg="5" xs="12">
+                <p class="text-left">(1 Kamar 4 Tempat Tidur)</p>
+                <p class="text-left">(1 Kamar 3 Tempat Tidur)</p>
+                <p class="text-left">(1 Kamar 2 Tempat Tidur)</p>
+              </b-col>
+              <b-col lg="2" xs="12">
+                <p class="text-left font-weight-bold">$3500</p>
+                <p class="text-left font-weight-bold">$3700</p>
+                <p class="text-left font-weight-bold">$3900</p>
+              </b-col>
+              <small
+                class="text-info"
+                >*Harga belum termasuk biaya perlengkapan sebesar Rp2.500.000</small>
+              </b-row>
             </b-col>
           </b-row>
         </b-col>
@@ -57,43 +78,114 @@
     <!-- ./ Schedule -->
 
     <!-- Fasilitas Tab -->
-    <b-container>
-      <b-tabs content-class="mt-3" justified>
-        <b-tab title="Fasilitas" active><p>I'm the first tab</p></b-tab>
-        <b-tab title="Persyaratan"><p>I'm the second tab</p></b-tab>
-        <b-tab title="Hotel"><p>I'm the tab with the very, very long title</p></b-tab>
-        <b-tab title="Itenerary"><p>I'm the tab with the very, very long title</p></b-tab>
-        <b-tab title="Gallery"><p>I'm the tab with the very, very long title</p></b-tab>
-      </b-tabs>
-    </b-container>
+    <section>
+      <b-container>
+        <b-tabs content-class="mt-3" fill>
+          <!-- Fasilitas -->
+          <b-tab title="Fasilitas">
+          </b-tab>
+
+          <!-- Persyaratan -->
+          <b-tab title="Persyaratan" class="text-left">
+            <div class="mt-5 persyaratan">
+              <h3>Persyaratan Tools.Travel</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rem aliquam porro fuga quo quis quae,
+                illum culpa quam expedita itaque quibusdam soluta
+                vero blanditiis debitis sapiente ea,
+                consequuntur eius placeat?</p>
+                <br>
+              <p class="font-weight-bold">Persyaratan Berkas</p>
+              <ul>
+                <li>Paspor Asli berlaku minimal 8 bulan dan nama di paspor,
+                  harus minimal 5 kata. <br>
+                  Contoh: Abdullah Arif Sungkar
+                </li>
+                <li>Menyertakan nama ayah & nama ibu
+                  (Persyaratan Visa Turki)
+                </li>
+              </ul>
+            </div>
+          </b-tab>
+          <b-tab title="Hotel"><p>I'm the tab with the very, very long title</p></b-tab>
+          <b-tab title="Itenerary"><p>I'm the tab with the very, very long title</p></b-tab>
+          <b-tab title="Gallery"><p>I'm the tab with the very, very long title</p></b-tab>
+        </b-tabs>
+      </b-container>
+    </section>
     <!-- ./ Fasilitas Tab -->
 
     <!-- Paket Umroh Lain -->
     <section id="paket-lain">
       <b-container class="py-5">
-        <h3 class="text-left">Paket Umroh yang Lainnya</h3>
-        <h6 class="text-left">3 Paket Tersedia</h6>
+        <div class="py-3">
+          <h3 class="text-left">Paket Umroh yang Lainnya</h3>
+          <h6 class="text-left text-info">3 Paket Tersedia</h6>
+        </div>
         <div class="mt-3">
           <b-card
             img-src="https://placekitten.com/300/300"
             img-alt="Card image"
-            img-right
-            class="card-img-right">
-              <b-card-text>
+            img-right>
                 <h4 class="text-left">Umroh + Aqsha Palestina</h4>
-                <p class="text-left">April & Juli 2019</p>
+                <p class="text-left text-info">April & Juli 2019</p> <br><br>
+              <div class="card-body d-flex flex-column">
                 <b-container>
                   <b-row align-v="end">
-                    <b-col lg="6">
-                      <h4>$4200</h4>
-                      <small>+ Rp2.500.000 (Biaya Perlengkapan)</small>
+                    <b-col lg="6" xs="12" class="text-left">
+                      <h4 class="font-weight-bold">$4200</h4>
+                      <p>+ Rp2.500.000 (Biaya Perlengkapan)</p>
                     </b-col>
-                    <b-col lg="6">
-                      <b-button class="action-button">SELENGKAPNYA</b-button>
+                    <b-col lg="6" xs="12">
+                      <b-button class="action-button" style="float: right;">SELENGKAPNYA</b-button>
                     </b-col>
                   </b-row>
                 </b-container>
-              </b-card-text>
+              </div>
+          </b-card>
+        </div>
+        <div class="mt-3">
+          <b-card
+            img-src="https://placekitten.com/300/300"
+            img-alt="Card image"
+            img-right>
+                <h4 class="text-left">Umroh + Aqsha Palestina</h4>
+                <p class="text-left text-info">April & Juli 2019</p> <br><br>
+              <div class="card-body d-flex flex-column">
+                <b-container>
+                  <b-row align-v="end">
+                    <b-col lg="6" xs="12" class="text-left">
+                      <h4 class="font-weight-bold">$4200</h4>
+                      <p>+ Rp2.500.000 (Biaya Perlengkapan)</p>
+                    </b-col>
+                    <b-col lg="6" xs="12">
+                      <b-button class="action-button" style="float: right;">SELENGKAPNYA</b-button>
+                    </b-col>
+                  </b-row>
+                </b-container>
+              </div>
+          </b-card>
+        </div>
+        <div class="mt-3">
+          <b-card
+            img-src="https://placekitten.com/300/300"
+            img-alt="Card image"
+            img-right>
+                <h4 class="text-left">Umroh + Aqsha Palestina</h4>
+                <p class="text-left text-info">April & Juli 2019</p> <br><br>
+              <div class="card-body d-flex flex-column">
+                <b-container>
+                  <b-row align-v="end">
+                    <b-col lg="6" xs="12" class="text-left">
+                      <h4 class="font-weight-bold">$4200</h4>
+                      <p>+ Rp2.500.000 (Biaya Perlengkapan)</p>
+                    </b-col>
+                    <b-col lg="6" xs="12">
+                      <b-button class="action-button" style="float: right;">SELENGKAPNYA</b-button>
+                    </b-col>
+                  </b-row>
+                </b-container>
+              </div>
           </b-card>
         </div>
       </b-container>
@@ -109,7 +201,9 @@ export default {
 </script>
 
 <style scoped>
-
+section {
+  margin-top: 100px
+}
 #paket-lain {
   background-color: #f7f4f4;
 }
@@ -131,10 +225,15 @@ export default {
   color: #fff;
   padding: 0;
   border: none;
-  float: left;
 }
-.footer-paket-card {
-  position: absolute;
-  bottom: 0;
+.persyaratan {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
 }
 </style>
