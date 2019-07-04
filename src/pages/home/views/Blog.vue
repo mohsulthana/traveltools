@@ -118,76 +118,41 @@
     <!-- Paket Umroh Lain -->
     <section id="paket-lain">
       <b-container class="py-5">
-        <div class="py-3">
-          <h3 class="text-left">Paket Umroh yang Lainnya</h3>
-          <h6 class="text-left text-info">3 Paket Tersedia</h6>
-        </div>
-        <div class="mt-3">
-          <b-card
-            img-src="https://placekitten.com/300/300"
-            img-alt="Card image"
-            img-right>
-                <h4 class="text-left">Umroh + Aqsha Palestina</h4>
-                <p class="text-left text-info">April & Juli 2019</p> <br><br>
-              <div class="card-body d-flex flex-column">
-                <b-container>
-                  <b-row align-v="end">
-                    <b-col lg="6" xs="12" class="text-left">
-                      <h4 class="font-weight-bold">$4200</h4>
-                      <p>+ Rp2.500.000 (Biaya Perlengkapan)</p>
+        <b-row>
+          <b-col class="text-left">
+            <h3>Paket Umroh yang Lainnya</h3>
+            <h6 class="text-info">3 Paket Tersedia</h6>
+          </b-col>
+        </b-row>
+      </b-container>
+      <b-container>
+        <b-row>
+          <!-- <b-card img-src="https://placekitten.com/300/300" img-alt="Card image" img-right> -->
+          <div class="custom-card">
+            <b-container>
+              <b-row>
+                <b-col lg="9" xs="12" class="text-left pt-4 pl-3">
+                  <h2>Umroh + Aqsha Palestina</h2>
+                  <p class="text-info">April & Juli 2018</p>
+                  <b-row class="custom-card-content">
+                    <b-col>
+                      <h2>$4200</h2>
+                      <p>+Rp2.500.000 (Biaya Perlengkapan)</p>
                     </b-col>
-                    <b-col lg="6" xs="12">
-                      <b-button class="action-button" style="float: right;">SELENGKAPNYA</b-button>
-                    </b-col>
-                  </b-row>
-                </b-container>
-              </div>
-          </b-card>
-        </div>
-        <div class="mt-3">
-          <b-card
-            img-src="https://placekitten.com/300/300"
-            img-alt="Card image"
-            img-right>
-                <h4 class="text-left">Umroh + Aqsha Palestina</h4>
-                <p class="text-left text-info">April & Juli 2019</p> <br><br>
-              <div class="card-body d-flex flex-column">
-                <b-container>
-                  <b-row align-v="end">
-                    <b-col lg="6" xs="12" class="text-left">
-                      <h4 class="font-weight-bold">$4200</h4>
-                      <p>+ Rp2.500.000 (Biaya Perlengkapan)</p>
-                    </b-col>
-                    <b-col lg="6" xs="12">
-                      <b-button class="action-button" style="float: right;">SELENGKAPNYA</b-button>
+                    <b-col>
+                      <b-button
+                      class="action-button"
+                      style="float: right;">PESAN SEKARANG</b-button>
                     </b-col>
                   </b-row>
-                </b-container>
-              </div>
-          </b-card>
-        </div>
-        <div class="mt-3">
-          <b-card
-            img-src="https://placekitten.com/300/300"
-            img-alt="Card image"
-            img-right>
-                <h4 class="text-left">Umroh + Aqsha Palestina</h4>
-                <p class="text-left text-info">April & Juli 2019</p> <br><br>
-              <div class="card-body d-flex flex-column">
-                <b-container>
-                  <b-row align-v="end">
-                    <b-col lg="6" xs="12" class="text-left">
-                      <h4 class="font-weight-bold">$4200</h4>
-                      <p>+ Rp2.500.000 (Biaya Perlengkapan)</p>
-                    </b-col>
-                    <b-col lg="6" xs="12">
-                      <b-button class="action-button" style="float: right;">SELENGKAPNYA</b-button>
-                    </b-col>
-                  </b-row>
-                </b-container>
-              </div>
-          </b-card>
-        </div>
+                </b-col>
+                <b-col lg="3" xs="12">
+                  <b-img src="https://placekitten.com/300/300" img-alt="Card image"></b-img>
+                </b-col>
+              </b-row>
+            </b-container>
+          </div>
+        </b-row>
       </b-container>
     </section>
     <!-- ./Paket Umroh Lain -->
@@ -201,6 +166,22 @@ export default {
 </script>
 
 <style scoped>
+img {
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+}
+.custom-card-content {
+  margin-top: 100px;
+}
+.custom-card {
+  width: 1100px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
 section {
   margin-top: 100px
 }

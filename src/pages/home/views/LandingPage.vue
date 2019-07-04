@@ -261,7 +261,7 @@
 </template>
 
 <script>
-import Action from '@/components/CallToAction';
+import Action from '@/components/CallToAction.vue';
 
 export default {
   data() {
