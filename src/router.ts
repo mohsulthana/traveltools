@@ -9,5 +9,5 @@ Vue.use(Router);
 
 export default new Router({
   base: '/home',
-  mode: 'history'
+  mode: 'history',
 });
