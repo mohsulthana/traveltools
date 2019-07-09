@@ -31,6 +31,9 @@ export default class App extends Vue {}
   color: #2c3e50;
   margin-top: 60px;
 }
+section {
+  padding-top: 8rem;
+}
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;

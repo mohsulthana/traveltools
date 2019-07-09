@@ -19,7 +19,9 @@
         <b-nav-item>
           <router-link :to="{ name: 'Detail-artikel' }">Detail</router-link>
         </b-nav-item>
-        <b-nav-item href="#">Artikel</b-nav-item>
+        <b-nav-item>
+          <router-link :to="{ name: 'Gallery' }">Gallery</router-link>
+        </b-nav-item>
         <b-nav-item href="#">FAQ</b-nav-item>
       </b-navbar-nav>
 

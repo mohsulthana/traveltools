@@ -107,8 +107,61 @@
               </ul>
             </div>
           </b-tab>
-          <b-tab title="Hotel"><p>I'm the tab with the very, very long title</p></b-tab>
-          <b-tab title="Itenerary"><p>I'm the tab with the very, very long title</p></b-tab>
+
+          <!-- Hotel -->
+          <b-tab title="Hotel" class="p-3">
+            <b-row>
+              <b-col>
+                <b-img src="https://picsum.photos/300/150/?image=41" class="berita-lainnya" fluid alt="Fluid image"></b-img>
+              </b-col>
+              <b-col>
+                <b-tabs content-class="mt-3" fill>
+                  <!-- Fasilitas -->
+                  <b-tab title="Makkah">
+                    <div class="text-left p-3">
+                      <h4>Elaf Ajyad Hotel</h4>
+                      <div>Bintang</div>
+                      <font-awesome-icon icon="map-marker-alt" :style="{ color: 'blue' }" />
+                      <span> Ibrahim Al Khalil Street,
+                        Al Hajjah, Makkah, 24231, 21955, Saudi Arabia
+                      </span>
+                      <hr>
+                      <h6 class="text-left font-weight-bold">PAKET KAMAR</h6>
+                      <b-row>
+                        <b-col lg="5" xs="12">
+                          <div id="li-image"></div>
+                          <p class="text-left font-weight-bold">Quad</p>
+                          <p class="text-left font-weight-bold">Triple</p>
+                          <p class="text-left font-weight-bold">Double</p>
+                        </b-col>
+                        <b-col lg="5" xs="12">
+                          <p class="text-left">30.0 sqm</p>
+                          <p class="text-left">25.0 sqm</p>
+                          <p class="text-left">35.0 sqm</p>
+                        </b-col>
+                      </b-row>
+                      <hr>
+                      <h6 class="text-left font-weight-bold">Fasilitas Khusus</h6>
+                      <ul id="li-image">
+                        <li>50 m dari Masjidil Haram</li>
+                        <li>Sarapan Menu Indonesia</li>
+                      </ul>
+                    </div>
+                  </b-tab>
+                  <b-tab title="Madinah">
+                  </b-tab>
+                  <b-tab title="Istanbul">
+                  </b-tab>
+                </b-tabs>
+              </b-col>
+            </b-row>
+          </b-tab>
+          <!-- ./ Hotel -->
+
+          <!-- Itenerary -->
+          <b-tab title="Itenerary">
+          </b-tab>
+          <!-- ./ Itenerary -->
           <b-tab title="Gallery"><p>I'm the tab with the very, very long title</p></b-tab>
         </b-tabs>
       </b-container>
@@ -160,6 +213,7 @@
 </template>
 
 <script>
+
 export default {
 
 };

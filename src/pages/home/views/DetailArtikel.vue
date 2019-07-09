@@ -37,9 +37,11 @@
                 <b-button class="action-button">TULIS KOMENTAR</b-button>
               </b-col>
               <b-col lg="6" xs="12">
-                <div class="ml-4">
-                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook' }"/>
-                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }"/>
+                <div class="pl-5">
+                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook' }" size="lg"/>
+                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="lg"/>
+                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'whatsapp' }" size="lg"/>
+                  <font-awesome-icon :icon="{ prefix: 'far', iconName: 'bookmark' }" size="lg"/>
                 </div>
               </b-col>
             </b-row>
@@ -110,6 +112,11 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+svg {
+  margin-left: 2rem;
+  position: relative;
+  top: .8rem;
+}
 .jumbotron-image {
   background-image: linear-gradient(to bottom, #b7b6f9, #b7b6f9),
   linear-gradient(to top, #b7b6f9, #b7b6f9);

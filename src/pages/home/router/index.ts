@@ -4,6 +4,7 @@ import Landing from '../views/LandingPage.vue';
 import Blog from '../views/Blog.vue';
 import Artikel from '../views/Artikel.vue';
 import Detail from '../views/DetailArtikel.vue';
+import Gallery from '../views/Gallery.vue';
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/detail/artikel',
       name: 'Detail-artikel',
       component: Detail,
+    },
+    {
+      path: '/home/gallery',
+      name: 'Gallery',
+      component: Gallery,
     },
   ],
 });

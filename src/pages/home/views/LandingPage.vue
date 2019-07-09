@@ -9,67 +9,50 @@
             <h3 class="lead">Tools.Travel lorem ipsum de amat</h3>
           </b-col>
         </b-row>
-      <!-- Card -->
-      <b-card no-body class="umroh-select" style="max-width: 740px;">
-        <b-row no-gutters>
-          <b-col md="6">
-            <b-card-body>
-              <b-card-text>
-                <b-row>
-                  <b-col>Icon</b-col>
-                  <b-col>
-                    <b-row>
-                      <b-card-text class="text-muted">Paket Umroh</b-card-text>
-                    </b-row>
-                    <b-row>
-                      <b-card-text>
-                        <b-form-select
-                        v-model="selected"
-                        :options="options">
-                        </b-form-select>
-                      </b-card-text>
-                    </b-row>
-                  </b-col>
-                </b-row>
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-          <b-col md="6" class="pr-4">
-            <b-card-body>
-              <b-card-text>
-                <b-row>
-                  <b-col>Icon</b-col>
-                  <b-col>
-                    <b-row>
-                      <b-card-text class="text-muted">
-                        Waktu Keberangkatan
-                      </b-card-text>
-                    </b-row>
-                    <b-row>
-                      <b-card-text>
-                        <b-form-input type="date"></b-form-input>
-                      </b-card-text>
-                    </b-row>
-                  </b-col>
-                </b-row>
-              </b-card-text>
-            </b-card-body>
-          </b-col>
+        <b-row>
+          <!-- Card -->
+          <b-card class="umroh-select" style="max-width: 50vw;">
+            <b-container>
+              <b-row>
+                <div class="content-umroh-select">
+                  <b-row>
+                    <b-col lg="2" xs="12" class="px-3 pt-3">
+                      <font-awesome-icon icon="calendar-week" size="lg"/>
+                    </b-col>
+                    <b-col lg="10" class="text-left">
+                      <p class="text-muted">Paket Umroh</p>
+                      <p class="font-weight-bold">Gold Aqsa Palestina</p>
+                    </b-col>
+                  </b-row>
+                </div>
+                <div class="vr"></div>
+                <div class="content-umroh-select">
+                  <b-row>
+                    <b-col lg="2" xs="12" class="pt-3">
+                      <font-awesome-icon icon="calendar-week" size="lg"/>
+                    </b-col>
+                    <b-col lg="10" class="text-left">
+                      <p class="text-muted">Waktu Keberangkatan</p>
+                      <p class="font-weight-bold">Juni 2019</p>
+                    </b-col>
+                  </b-row>
+                </div>
+              </b-row>
+            </b-container>
+          </b-card>
+          <!-- ./Card -->
         </b-row>
-      </b-card>
-      <!-- ./Card -->
-        <b-col
-          md="4"
-          class="mr-auto mt-3">
-        <b-button class="text-light search">SEARCH</b-button>
-        </b-col>
+        <b-row>
+          <b-button class="search-btn mt-5">SEARCH</b-button>
+        </b-row>
       </b-container>
     </b-jumbotron>
     <!-- ./ Jumbotron -->
 
     <!-- Banner -->
-    <section id="banner">
-      <b-container>
+    <section>
+      <div class="banner">
+        <b-container>
           <b-card no-body class="overflow-hidden">
             <b-row no-gutters>
               <b-col md="6">
@@ -78,159 +61,162 @@
                   <p class="bottom-right text-right">
                     <span class="display-4 text-light">$4200</span>
                     <br />
-                    <span class="text-muted">+ Rp.2.500.000 (Perlengkapan)</span></p>
+                    <span>+ Rp.2.500.000 (Perlengkapan)</span></p>
                 </div>
                   <p class="bottom-right"></p>
               </b-col>
               <b-col md="6">
                 <b-card-body>
-                  <b-card-text>
+                  <div class="p-4 text-left">
                     <h3
-                    class="text-left font-weight-bold">
+                    class="font-weight-bold">
                     Paket Umroh + Wisata Sejarah Andalusia</h3>
-                    <p class="text-left">Umroh bersama Ustadz Khalid Basalamah,
+                    <p>Umroh bersama Ustadz Khalid Basalamah,
                     dilanjutkan dengan Tour Sejarah Bangkit dan Runtuhnya
                     Islam di Andalusia.</p>
-                  </b-card-text>
-                  <b-button class="text-light selengkapnya">Selengkapnya</b-button>
+                    <b-button class="text-light btn-selengkapnya">Selengkapnya</b-button>
+                  </div>
                 </b-card-body>
               </b-col>
             </b-row>
           </b-card>
-      </b-container>
+        </b-container>
+      </div>
     </section>
     <!-- ./ Banner -->
 
     <!-- Paket Umroh -->
-    <section id="paket-umroh" class="mt-5">
-      <div>
-        <b-container>
-          <h4>Paket Umrol Tools.Travel</h4>
+    <section>
+      <b-container>
+        <div class="pb-5">
+          <h2>Paket Umrol Tools.Travel</h2>
           <h5>Nikmati berbagai paket Umroh yang tersedia di Tools.Travel</h5>
-            <b-card-group deck class="mt-3">
-              <b-card
-                overlay
-                img-src="http://imaginespainforyou.com/wp-content/uploads/2015/01/andalusia-granada.jpg"
-                img-alt="Image"
-                img-top
-                text-variant="white"
-                title="$1600"
-                sub-title="+ Rp.2.500.000 (Perlengkapan)">
-                <div slot="header" class="text-dark text-left">
+        </div>
+          <b-card-group deck>
+            <b-card
+              overlay
+              img-src="http://imaginespainforyou.com/wp-content/uploads/2015/01/andalusia-granada.jpg"
+              img-alt="Image"
+              img-top
+              text-variant="white"
+              title="$1600"
+              sub-title="+ Rp.2.500.000 (Perlengkapan)">
+              <div slot="header" class="text-dark text-left">
+                <b-container>
                   <b-row><p class="text-left">Paket Bronze</p></b-row>
-                </div>
-                <div slot="footer" class="text-dark text-left">
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-button class="pesan">PESAN SEKARANG</b-button>
-                  <h5 class="text-center mt-2">SELENGKAPNYA</h5>
-                </div>
-              </b-card>
-              <b-card
-                overlay
-                img-src="http://imaginespainforyou.com/wp-content/uploads/2015/01/andalusia-granada.jpg"
-                img-alt="Image"
-                img-top
-                text-variant="white"
-                title="$1600"
-                sub-title="+ Rp.2.500.000 (Perlengkapan)">
-                <div slot="header" class="text-dark text-left">
-                  <b-row><p class="text-left">Paket Bronze</p></b-row>
-                </div>
-                <div slot="footer" class="text-dark text-left">
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-button class="pesan">PESAN SEKARANG</b-button>
-                  <h5 class="text-center mt-2">SELENGKAPNYA</h5>
-                </div>
-              </b-card>
-              <b-card
-                overlay
-                img-src="http://imaginespainforyou.com/wp-content/uploads/2015/01/andalusia-granada.jpg"
-                img-alt="Image"
-                img-top
-                text-variant="white"
-                title="$1600"
-                sub-title="+ Rp.2.500.000 (Perlengkapan)">
-                <div slot="header" class="text-dark text-left">
-                  <b-row><p class="text-left">Paket Bronze</p></b-row>
-                </div>
-                <div slot="footer" class="text-dark text-left">
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-row>
-                    <b-col>
-                      <p class="text-left text-dark">Program 9 Hari</p>
-                    </b-col>
-                    <b-col>
-                      <p class="text-left">Icon conteng</p>
-                    </b-col>
-                  </b-row>
-                  <b-button class="pesan">PESAN SEKARANG</b-button>
-                  <h5 class="text-center mt-2">SELENGKAPNYA</h5>
-                </div>
-              </b-card>
-            </b-card-group>
-        </b-container>
-      </div>
+                </b-container>
+              </div>
+              <div slot="footer" class="text-dark text-left">
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-button class="pesan">PESAN SEKARANG</b-button>
+                <h5 class="text-center mt-2">SELENGKAPNYA</h5>
+              </div>
+            </b-card>
+            <b-card
+              overlay
+              img-src="http://imaginespainforyou.com/wp-content/uploads/2015/01/andalusia-granada.jpg"
+              img-alt="Image"
+              img-top
+              text-variant="white"
+              title="$1600"
+              sub-title="+ Rp.2.500.000 (Perlengkapan)">
+              <div slot="header" class="text-dark text-left">
+                <b-row><p class="text-left">Paket Bronze</p></b-row>
+              </div>
+              <div slot="footer" class="text-dark text-left">
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-button class="pesan">PESAN SEKARANG</b-button>
+                <h5 class="text-center mt-2">SELENGKAPNYA</h5>
+              </div>
+            </b-card>
+            <b-card
+              overlay
+              img-src="http://imaginespainforyou.com/wp-content/uploads/2015/01/andalusia-granada.jpg"
+              img-alt="Image"
+              img-top
+              text-variant="white"
+              title="$1600"
+              sub-title="+ Rp.2.500.000 (Perlengkapan)">
+              <div slot="header" class="text-dark text-left">
+                <b-row><p class="text-left">Paket Bronze</p></b-row>
+              </div>
+              <div slot="footer" class="text-dark text-left">
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col>
+                    <p class="text-left text-dark">Program 9 Hari</p>
+                  </b-col>
+                  <b-col>
+                    <p class="text-left">Icon conteng</p>
+                  </b-col>
+                </b-row>
+                <b-button class="pesan">PESAN SEKARANG</b-button>
+                <h5 class="text-center mt-2">SELENGKAPNYA</h5>
+              </div>
+            </b-card>
+          </b-card-group>
+      </b-container>
     </section>
     <!-- ./ Paket Umroh -->
 
@@ -291,13 +277,23 @@ export default {
   border-radius: 3.9px;
   box-shadow: -5.3px 5.3px 10.5px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  flex-direction: row;
+  display: flex;
 }
-.search {
+@media (max-width: 765px) {
+  .umroh-select {
+    flex-wrap: wrap;
+  }
+}
+.search-btn {
   width: 133px;
   height: 45px;
-  margin-right: 500px;
-  background-color: #b7b6f9;
+  background-color: #7675c8;
   font-family: Montserrat;
+}
+.jumbotron {
+  background: #fff;
+  margin: 0;
 }
 .lead {
   width: 507px;
@@ -312,6 +308,10 @@ export default {
   text-align: left;
   color: #000000;
 }
+.content-umroh-select {
+  flex-grow: 1;
+  left: 0;
+}
 .display-3 {
   font-family: Montserrat;
   font-size: 46.5px;
@@ -325,13 +325,15 @@ export default {
   font-family: Montserrat;
   font-size: 46.5px;
 }
-
 .container-overlay {
   position: relative;
   text-align: center;
   color: white;
 }
-
+.banner {
+  padding: 5rem;
+  background: #f1f1f1;
+}
 .bottom-right {
   position: absolute;
   bottom: 8px;
@@ -350,15 +352,21 @@ export default {
 .pesan {
   width: 313.5px;
   height: 41px;
-  background-color: #b7b6f9;
+  background-color: #7675c8;
   outline: 0px;
 }
-.selengkapnya {
+.btn-selengkapnya {
   width: 206px;
   height: 48px;
   background-color: #7675c8;
 }
-
+.vr {
+  height: 3em;
+  margin: auto auto;
+  margin-right: 2em;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #FFF;
+}
 .paket {
   box-shadow: -7.1px 7.1px 25px 0 rgba(0, 0, 0, 0.05);
 }
